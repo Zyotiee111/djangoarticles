@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href=" {% static 'css/style.css'%} "/>
+</head>
+<body>
+    <div class="wrapper">
+        {% block content %} 
+        <h1> <a href="{% url 'articles:list'%}"> Hello </a></h2>
+
+        {% endblock %}
+
+
+    </div>s
+
+
+
+</body>
+</html>
