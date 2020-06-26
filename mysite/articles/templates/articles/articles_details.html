@@ -3,9 +3,12 @@
 {% block content %}
 <div class="article-detail">
     <div class="article">
+        <img src="{{ article.thumb.url}}" />
         <h2>{{ article.title }}</h2>
         <p>{{ article.body }}</p>
         <p>{{ article.date }}</p>
     </div>
 </div>
+<br>
+<h2><b><a href="{% url 'articles:list' %}"> Back to main page </a></b></h2>
 {% endblock %}
