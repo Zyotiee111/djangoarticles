@@ -1,3 +1,18 @@
 body{
     background-color: brown;
+    background-image: url(/static/stars.png);
+    background-repeat-y: no-repeat;
+    color: #fff;
+}
+
+
+
+h1, h2, h3, h4, h5{
+    font-weight: normal;
+    margin: 0;
+}
+
+a, a:hover, a:visited{
+    color: #fff;
+    text-decoration: none;
 }

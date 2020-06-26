@@ -1,20 +1,18 @@
 {% load static %}
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href=" {% static 'css/style.css'%} "/>
+    <title> Articles </title>
+    <link rel="stylesheet" href=" {% static 'css/style.css' %} "/>
 </head>
 <body>
-    <div class="wrapper">
-        {% block content %} 
-        <h1> <a href="{% url 'articles:list'%}"> Hello </a></h2>
+    <header class="wrapper">
+        <h1 style="text-align:center; color:black;"><a href="{% url 'articles:list'%}"> Articles </a></h1>
+        <hr>
+    </header>
+     <div class="wrapper">
+         {% block content %}
 
         {% endblock %}
-
-
-    </div>s
-
-
-
+     </div>
 </body>
 </html>
