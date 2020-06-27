@@ -7,6 +7,17 @@
 <body>
     <header class="wrapper">
         <h1 style="text-align:center; color:black;"><a href="{% url 'articles:list'%}"> Articles </a></h1>
+        <nav>
+            <ul>
+                <li>
+                    <form action="{% url 'accounts:logout' %}" class="logout-link" method="post">
+                        {% csrf_token %}
+                        <button type="submit"> Logout </button>
+
+                    </form>
+                </li>
+            </ul>
+        </nav>
         <hr>
     </header>
      <div class="wrapper">
